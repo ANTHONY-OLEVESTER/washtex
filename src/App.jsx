@@ -45,7 +45,7 @@ function App() {
   console.log('App component rendering');
   
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <AuthProvider>
         <Routes>
           <Route path="/login" element={<Login />} />
